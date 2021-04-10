@@ -4,7 +4,7 @@
   background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-size: 200% 100% !important;
-  height: calc(100vh - 56.9px);
+  height: 100vh;
 -webkit-animation: move 10s ease infinite;
         animation: move 10s ease infinite;
 transform: translate3d(0, 0, 0);
