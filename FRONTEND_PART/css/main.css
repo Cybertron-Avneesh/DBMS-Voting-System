@@ -94,7 +94,7 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  
+
   /*----------------page-wrapper----------------*/
   
   .page-wrapper .theme {
@@ -271,7 +271,7 @@
     border-radius: 4px;
   }
   
-  .sidebar-wrapper .sidebar-menu ul li a:hover > i::before {
+  .sidebar-wrapper .sidebar-menu ul li a:active > i::before {
     display: inline-block;
     animation: swing ease-in-out 0.5s 1 alternate;
   }
@@ -416,7 +416,7 @@
     border: 0px none #ffffff;
     border-radius: 0px;
   }
-  ::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:active {
     background: #525965;
   }
   ::-webkit-scrollbar-thumb:active {
@@ -427,7 +427,7 @@
     border: 0px none #ffffff;
     border-radius: 50px;
   }
-  ::-webkit-scrollbar-track:hover {
+  ::-webkit-scrollbar-track:active {
     background: transparent;
   }
   ::-webkit-scrollbar-track:active {
@@ -466,11 +466,11 @@
       color: #818896;
   }
   
-  .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
+  .chiller-theme .sidebar-wrapper .sidebar-menu ul li:active>a,
   .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a,
   .chiller-theme .sidebar-wrapper .sidebar-header .user-info,
-  .chiller-theme .sidebar-wrapper .sidebar-brand>a:hover,
-  .chiller-theme .sidebar-footer>a:hover i {
+  .chiller-theme .sidebar-wrapper .sidebar-brand>a:active,
+  .chiller-theme .sidebar-footer>a:active i {
       color: #b8bfce;
   }
   
@@ -478,12 +478,12 @@
       color: #bdbdbd;
   }
   
-  .page-wrapper.chiller-theme.toggled #close-sidebar:hover {
+  .page-wrapper.chiller-theme.toggled #close-sidebar:active {
       color: #ffffff;
   }
   
-  .chiller-theme .sidebar-wrapper ul li:hover a i,
-  .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
+  .chiller-theme .sidebar-wrapper ul li:active a i,
+  .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:active:before,
   .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
   .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
       color: #16c7ff;
