@@ -14,18 +14,6 @@
 	animation: move 10s ease infinite;
 	transform: translate3d(0, 0, 0);
 }
-
-.nav-pills {
-	display: flex;
-	justify-content: space-evenly;
-}
-.nav-tabs {
-	display: flex;
-	justify-content: space-evenly;
-}
-.nav-link {
-	color: rgb(255, 255, 255);
-}
 .profilelink:hover {
 	text-decoration: none;
 }
