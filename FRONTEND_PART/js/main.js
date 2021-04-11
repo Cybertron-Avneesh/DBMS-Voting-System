@@ -33,3 +33,6 @@ $("#show-sidebar").click(function() {
    
    
 });
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
