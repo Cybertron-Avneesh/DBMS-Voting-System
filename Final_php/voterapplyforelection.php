@@ -20,7 +20,7 @@ session_start();
 </head>
 
 <body>
-	<nav class="navbar navbar-dark bg-dark responav">
+	<nav class="navbar navbar-dark bg-dark" style="padding-bottom: 15px;">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Apply as Candidate</a>
 		<a class="nav-link" href="./index.php" style="padding:0">
 			<img src="images/logout.png" alt="" style="width: 40px" />

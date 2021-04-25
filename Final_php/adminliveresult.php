@@ -27,7 +27,7 @@ session_start();
 </head>
 
 <body>
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-dark bg-dark" style="padding-bottom: 15px;">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Live Results</a>
 		<a class="nav-link" href="./index.php">
 			<img src="images/logout.png" alt="" style="width: 40px" />

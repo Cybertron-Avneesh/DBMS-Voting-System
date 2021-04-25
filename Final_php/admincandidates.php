@@ -36,7 +36,7 @@ $conn = getConnection();
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark" style="padding-bottom: 15px;">
         <a class="navbar-brand mx-auto" href="#" style="color: coral">Candidates</a>
         <a href="#">
             <img src="images/logout.png" alt="" style="width: 40px" />
