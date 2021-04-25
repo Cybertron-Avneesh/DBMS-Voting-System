@@ -110,7 +110,8 @@ session_start();
                     </div>
                     <h3>Welcome</h3>
                     <p>Register here</p>
-                    <a href="./login.php" class="btn btn-primary">Login</a>
+                    <div class="center"><a class="btnlogin" href="./index.php">Login</a></div>
+                    <!-- <a href="./index.php" class="">Login</a> -->
                 </div>
                 <div class="col-md-9 register-right">
                     <div class="tab-content" id="myTabContent">

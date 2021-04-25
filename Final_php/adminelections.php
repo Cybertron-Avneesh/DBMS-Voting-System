@@ -35,12 +35,12 @@ $conn = getConnection();
 <body>
 	<nav class="navbar navbar-dark bg-dark">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Elections</a>
-		<a href="./login.php">
+		<a href="./index.php">
 			<img src="images/logout.png" alt="" style="width: 40px" />
 		</a>
 	</nav>
 	<div class="page-wrapper chiller-theme">
-		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#">
+		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#" style="z-index:5">
 			<i class="fas fa-lg fa-bars"></i>
 		</a>
 		<nav id="sidebar" class="sidebar-wrapper">
@@ -69,27 +69,27 @@ $conn = getConnection();
 					<ul>
 						<li class="sidebar-dropdown">
 							<a href="#" id="activated">
-								<i class="fa fa-chart-line"></i>
+								<i class="fa fa-calendar"></i>
 								<span>Elections</span>
 							</a>
 						</li>
 
 						<li class="sidebar-dropdown">
 							<a href="./admincandidates.php">
-								<i class="fa fa-chart-line"></i>
+								<i class="fa fa-users"></i>
 								<span>Candidates</span>
 							</a>
 						</li>
 
 						<li class="sidebar-dropdown">
 							<a href="./adminvoter.php">
-								<i class="fa fa-chart-line"></i>
+								<i class="fa fa-users"></i>
 								<span>Voters</span>
 							</a>
 						</li>
 
 						<li class="sidebar-dropdown">
-							<a href="#">
+							<a href="./adminliveresult.php">
 								<i class="fa fa-chart-line"></i>
 								<span>Live Results</span>
 							</a>
@@ -100,7 +100,7 @@ $conn = getConnection();
 			</div>
 			<!-- sidebar-content  -->
 			<div class="sidebar-footer">
-				<a href="./login.php">
+				<a href="./index.php">
 					<i class="fa fa-power-off"></i>
 				</a>
 			</div>
@@ -346,7 +346,7 @@ $conn = getConnection();
 					if ($_SERVER['REQUEST_METHOD'] == 'POST'  && $_POST['action'] == 'delete') {
 						if ($conn) {
 							$sql = "delete from `elections` where eid=" . $_POST['eid'];
-							echo $sql;
+							// echo $sql;
 							$result = mysqli_query($conn, $sql);
 							if ($result) {
 								echo '<div class="alert alert-success alert-dismissible fade show" role="alert">

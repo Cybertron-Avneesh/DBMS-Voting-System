@@ -19,20 +19,21 @@ session_start();
 	<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/voterprofile.css">
+	<link rel="stylesheet" href="css/adminvoter.css" />
+	
 	<script src="js/main.js"></script>
 	<title>Voter | Liver Results</title>
 </head>
 
-<body>
+<body id="doc">
 	<nav class="navbar navbar-dark bg-dark">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Live Results</a>
-		<a class="nav-link" href="./login.php">
+		<a class="nav-link" href="./index.php">
 			<img src="images/logout.png" alt="" style="width: 40px" />
 		</a>
 	</nav>
 	<div class="page-wrapper chiller-theme">
-		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#">
+		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#" style="z-index:5">
 			<i class="fas fa-lg fa-bars"></i>
 		</a>
 		<nav id="sidebar" class="sidebar-wrapper">
@@ -101,7 +102,7 @@ session_start();
 			</div>
 			<!-- sidebar-content  -->
 			<div class="sidebar-footer">
-				<a href="./login.php">
+				<a href="./index.php">
 					<i class="fa fa-power-off"></i>
 				</a>
 			</div>
@@ -112,103 +113,8 @@ session_start();
 	<!-- Add your Div here  -->
 
 	<div class="intro-area">
-		<div class="main main-raised">
-			<div class="profile-content container">
-				<!-- <div class="card">
-					<div class="card-header">
-						Featured
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">Special title treatment</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div> -->
-				<!-- <div class="card-deck">
-					<div class="card bg-primary">
-						<div class="card-body text-center">
-							<p class="card-text">Some text inside the first card</p>
-						</div>
-					</div>
-					<div class="card bg-warning">
-						<div class="card-body text-center">
-							<p class="card-text">Some text inside the second card</p>
-						</div>
-					</div>
-					<div class="card bg-success">
-						<div class="card-body text-center">
-							<p class="card-text">Some text inside the third card</p>
-						</div>
-					</div>
-					<div class="card bg-danger">
-						<div class="card-header">
-							Header
-						</div>
-						<div class="card-body text-center">
-							<p class="card-text">Some text inside the fourth card</p>
-						</div>
-					</div>
-					<div class="card bg-warning">
-						<div class="card-body text-center">
-							<p class="card-text">Some text inside the second card</p>
-						</div>
-					</div>
-					<div class="card bg-success">
-						<div class="card-body text-center">
-							<p class="card-text">Some text inside the third card</p>
-						</div>
-					</div>
-					<div class="card bg-danger">
-						<div class="card-header">
-							Header
-						</div>
-						<div class="card-body text-center">
-							<p class="card-text">Some text inside the fourth card</p>
-						</div>
-					</div>
-				</div> -->
-				<!-- <div class="container ">
-					<div class="card text-center col-lg-6 col-sm-12">
-						<div class="card-header">
-							Featured
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Special title treatment</h5>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-						<div class="card-footer text-muted">
-							2 days ago
-						</div>
-					</div> -->
-				<!-- <div class="span6">
-						<h5>Poll: Where do you usually browse</h5>
-						<strong>Windows PC</strong><span class="pull-right">30%</span>
-						<div class="progress progress-danger active">
-							<div class="bar" style="width: 30%;"></div>
-						</div>
-						<strong>Mac</strong><span class="pull-right">40%</span>
-						<div class="progress progress-info active">
-							<div class="bar" style="width: 40%;"></div>
-						</div>
-						<strong>iPad/iPhone</strong><span class="pull-right">10%</span>
-						<div class="progress progress-striped active">
-							<div class="bar" style="width: 10%;"></div>
-						</div>
-						<strong>Android</strong><span class="pull-right">5%</span>
-						<div class="progress progress-success active">
-							<div class="bar" style="width: 5%;"></div>
-						</div>
-						<strong>Others</strong><span class="pull-right">15%</span>
-						<div class="progress progress-warning active">
-							<div class="bar" style="width: 15%;"></div>
-						</div>
-						<p>
-							<a href="#" class="btn btn-large btn-success">Vote</a>
-							<a href="#" class="pull-right">View detailed results</a>
-						</p>
-					</div> -->
-
+		<div class="main main-raised liveresultmain">
+			<div class="container containerinerinsidemain">
 				<?php
 				function getConnection()
 				{
@@ -282,6 +188,7 @@ session_start();
 	</div>
 	</div>
 	</div>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

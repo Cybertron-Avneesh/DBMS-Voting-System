@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
 	<!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css"> -->
 	<!-- <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script> -->
@@ -47,20 +47,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/voterprofile.css">
+	<link rel="stylesheet" href="css/adminvoter.css" />
+	<link rel="stylesheet" href="css/table.css" />
+	
 	<script src="js/main.js"></script>
 	<title>Voter | Cast Votes</title>
 </head>
 
 <body>
 	<nav class="navbar navbar-dark bg-dark">
-		<a class="navbar-brand mx-auto" href="#" style="color: coral">Cast your valuable votes</a>
-		<a class="nav-link" href="./login.php">
+		<a class="navbar-brand mx-auto" href="#" style="color: coral">Cast your vote</a>
+		<a class="nav-link" href="./index.php">
 			<img src="images/logout.png" alt="" style="width: 40px" />
 		</a>
 	</nav>
 	<div class="page-wrapper chiller-theme">
-		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#">
+		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#" style="z-index:5"> 
 			<i class="fas fa-lg fa-bars"></i>
 		</a>
 		<nav id="sidebar" class="sidebar-wrapper">
@@ -105,14 +107,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 						</li>
 						<li>
 							<a href="./voterapplyforelection.php">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-sign-in-alt"></i>
 								<span>Apply as candidate</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="./castvotes.php" id="activated">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-vote-yea"></i>
 								<span>Cast vote</span>
 							</a>
 						</li>

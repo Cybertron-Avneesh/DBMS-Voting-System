@@ -12,19 +12,18 @@ session_start();
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/voterprofile.css">
 	<script src="js/main.js"></script>
-	<link rel="stylesheet" href="css/table.css">
+	<link rel="stylesheet" href="css/voterprofile.css">
 	<title>Voter | Election List</title>
 </head>
 
-<body>
+<body style="overflow: hidden;">
 	<nav class="navbar navbar-dark bg-dark">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Elections</a>
-		<a class="nav-link" href="./login.php">
+		<a class="nav-link" href="./index.php">
 			<img src="images/logout.png" alt="" style="width: 40px" />
 		</a>
 	</nav>
@@ -74,14 +73,14 @@ session_start();
 						</li>
 						<li>
 							<a href="./voterapplyforelection.php">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-sign-in-alt"></i>
 								<span>Apply as candidate</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="./castvotes.php">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-vote-yea"></i>
 								<span>Cast vote</span>
 							</a>
 						</li>
@@ -99,7 +98,7 @@ session_start();
 			</div>
 			<!-- sidebar-content  -->
 			<div class="sidebar-footer">
-				<a href="./login.php">
+				<a href="./index.php">
 					<i class="fa fa-power-off"></i>
 				</a>
 			</div>
@@ -173,9 +172,7 @@ session_start();
 								  </div>';
 								}
 								?>
-
-								<!-- 
-								<tr>
+								<!-- <tr>
 									<th scope="row">1</th>
 									<td>Gymkhana - President</td>
 									<td>Only available for 3rd year students</td>

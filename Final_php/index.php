@@ -64,7 +64,7 @@ session_start();
         </div>
         <h3 class="text-whitesmoke">Sign In</h3>
         <div class="container-content">
-            <form class="margin-t" action="./login.php" method="post">
+            <form class="margin-t" action="./index.php" method="post">
                 <div class="form-group">
                     <input type="text" name="userID" id="userID" class="form-control" placeholder="Username" required="">
                 </div>

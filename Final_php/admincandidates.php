@@ -72,19 +72,19 @@ $conn = getConnection();
                     <ul>
                         <li class="sidebar-dropdown">
                             <a href="./adminelections.php">
-                                <i class="fa fa-chart-line"></i>
+                                <i class="fa fa-calendar"></i>
                                 <span>Elections</span>
                             </a>
                         </li>
                         <li class="sidebar-dropdown">
                             <a href="./admincandidates.php" id="activated">
-                                <i class="fa fa-chart-line"></i>
+                                <i class="fa fa-users"></i>
                                 <span>Candidates</span>
                             </a>
                         </li>
                         <li class="sidebar-dropdown">
                             <a href="./adminvoter.php">
-                                <i class="fa fa-chart-line"></i>
+                                <i class="fa fa-users"></i>
                                 <span>Voters</span>
                             </a>
                         </li>
@@ -92,7 +92,7 @@ $conn = getConnection();
 
 
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="./adminliveresult.php">
                                 <i class="fa fa-chart-line"></i>
                                 <span>Live Results</span>
                             </a>

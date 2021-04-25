@@ -19,7 +19,9 @@ session_start();
 	<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/voterprofile.css">
+	<link rel="stylesheet" href="css/adminvoter.css" />
+	<link rel="stylesheet" href="css/table.css" />
+	
 	<script src="js/main.js"></script>
 	<title>Admin | Live Results</title>
 </head>
@@ -27,12 +29,12 @@ session_start();
 <body>
 	<nav class="navbar navbar-dark bg-dark">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Live Results</a>
-		<a class="nav-link" href="./login.php">
+		<a class="nav-link" href="./index.php">
 			<img src="images/logout.png" alt="" style="width: 40px" />
 		</a>
 	</nav>
 	<div class="page-wrapper chiller-theme">
-		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#">
+		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#" style="z-index:5">
 			<i class="fas fa-lg fa-bars"></i>
 		</a>
 		<nav id="sidebar" class="sidebar-wrapper">
@@ -63,21 +65,21 @@ session_start();
 					<ul>
 						<li class="sidebar-dropdown">
 							<a href="./adminelections.php">
-								<i class="fa fa-chart-line"></i>
+								<i class="fa fa-calendar"></i>
 								<span>Elections</span>
 							</a>
 						</li>
 
 						<li class="sidebar-dropdown">
 							<a href="./admincandidates.php">
-								<i class="fa fa-chart-line"></i>
+								<i class="fa fa-users"></i>
 								<span>Candidates</span>
 							</a>
 						</li>
 
 						<li class="sidebar-dropdown">
 							<a href="./adminvoter.php">
-								<i class="fa fa-chart-line"></i>
+								<i class="fa fa-users"></i>
 								<span>Voters</span>
 							</a>
 						</li>
@@ -94,7 +96,7 @@ session_start();
 			</div>
 			<!-- sidebar-content  -->
 			<div class="sidebar-footer">
-				<a href="./login.php">
+				<a href="./index.php">
 					<i class="fa fa-power-off"></i>
 				</a>
 			</div>
@@ -105,7 +107,7 @@ session_start();
 	<!-- Add your Div here  -->
 
 	<div class="intro-area">
-		<div class="main main-raised">
+		<div class="main main-raised" style="padding-top: 0px;">
 			<div>
 				<hr>
 				<h4>Currently live result is :

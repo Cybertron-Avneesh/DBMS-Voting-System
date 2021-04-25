@@ -11,8 +11,8 @@ session_start();
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/voterprofile.css">
 	<script src="js/main.js"></script>
@@ -20,9 +20,9 @@ session_start();
 </head>
 
 <body>
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-dark bg-dark mynav">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Profile</a>
-		<a class="nav-link" href="./login.php">
+		<a class="nav-link" href="./index.php">
 			<img src="images/logout.png" alt="" style="width: 40px" />
 		</a>
 	</nav>
@@ -72,14 +72,14 @@ session_start();
 						</li>
 						<li>
 							<a href="./voterapplyforelection.php">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-sign-in-alt"></i>
 								<span>Apply as candidate</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="./castvotes.php">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-vote-yea"></i>
 								<span>Cast vote</span>
 							</a>
 						</li>
@@ -96,19 +96,15 @@ session_start();
 			</div>
 			<!-- sidebar-content  -->
 			<div class="sidebar-footer">
-				<a href="./login.php">
+				<a href="./index.php">
 					<i class="fa fa-power-off"></i>
 				</a>
 			</div>
 		</nav>
 	</div>
-	<!-- sidebar-wrapper  -->
-
 	<!-- Add your Div here  -->
-
-	<div class="intro-area">
-		<div class="main main-raised">
-			<div class="profile-content">
+	<div class="main main-raised">
+			
 				<div class="container">
 					<?php
 					function getConnection()
@@ -161,7 +157,7 @@ session_start();
 										<td>".$row['mobile']."</td>
 									</tr>
 									<tr>
-										<th scope='row'>Date Of Birth(MM/DD/YYYY)</th>
+										<th scope='row'>Date Of Birth(YYYY-MM-DD)</th>
 										<td>".$row['birthdate']."</td>
 									</tr>
 									<tr>
@@ -234,9 +230,10 @@ session_start();
 
 					</div>
 				</div>
-			</div>
 		</div>
-	</div>
+	
+		
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

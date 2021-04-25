@@ -11,24 +11,23 @@ session_start();
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/voterprofile.css">
+	<link rel="stylesheet" href="css/adminvoter.css" />
 	<script src="js/main.js"></script>
-	<link rel="stylesheet" href="css/table.css">
 	<title>Voter | Candidate Application</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-dark bg-dark responav">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Apply as Candidate</a>
-		<a class="nav-link" href="./login.php">
+		<a class="nav-link" href="./index.php" style="padding:0">
 			<img src="images/logout.png" alt="" style="width: 40px" />
 		</a>
 	</nav>
 	<div class="page-wrapper chiller-theme">
-		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#">
+		<a id="show-sidebar" class="btn btn-lg btn-dark" href="#" style="z-index:5">
 			<i class="fas fa-lg fa-bars"></i>
 		</a>
 		<nav id="sidebar" class="sidebar-wrapper">
@@ -73,14 +72,14 @@ session_start();
 						</li>
 						<li>
 							<a href="./voterapplyforelection.php" id="activated">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-sign-in-alt"></i>
 								<span>Apply as candidate</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="./castvotes.php">
-								<i class="fa fa-folder"></i>
+								<i class="fas fa-vote-yea"></i>
 								<span>Cast vote</span>
 							</a>
 						</li>
@@ -98,7 +97,7 @@ session_start();
 			</div>
 			<!-- sidebar-content  -->
 			<div class="sidebar-footer">
-				<a href="./login.php">
+				<a href="./index.php">
 					<i class="fa fa-power-off"></i>
 				</a>
 			</div>
@@ -175,8 +174,8 @@ session_start();
 					?>
 					<div>
 						<form method="post" action="./voterapplyforelection.php">
-							<div class="mb-3 ">
-								<label for="electionID" class="form-label">Election ID</label>
+							<div class="mb-3 form-field">
+								<div>Election-ID :</div>
 								<input type="number" class="form-control" id="electionID" name="electionID">
 							</div>
 							<button type="submit" class="btn btn-primary">Apply</button>
