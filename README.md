@@ -37,7 +37,7 @@
 * Enrollment: **IIB2019010**
 * Github: [@Cybertron-Avneesh](https://github.com/Cybertron-Avneesh)
   
-🧑 **Sandeep Sahu**
+🧑 **Sandeep Kumar**
 
 * Enrollment: **IIB2019005**
 * Github: [@sandy9808](https://github.com/sandy9808)
