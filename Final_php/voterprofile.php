@@ -23,7 +23,7 @@ session_start();
 	<nav class="navbar navbar-dark bg-dark" style="padding-bottom: 15px;">
 		<a class="navbar-brand mx-auto" href="#" style="color: coral">Profile</a>
 		<a class="nav-link" href="./index.php">
-			<img src="images/logout.png" alt="" style="width: 40px" />
+			<img src="./images/logout.png" style="height: 20px;">
 		</a>
 	</nav>
 	<div class="page-wrapper chiller-theme">

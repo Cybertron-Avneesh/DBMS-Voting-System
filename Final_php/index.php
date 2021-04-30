@@ -33,7 +33,29 @@ session_start();
         // die if conncetion not successful
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
-        } else {
+        } elseif(strtolower($uID) == "admin"){
+            $sql = "select `password` from `admincontrol`";
+            $result = mysqli_query($conn, $sql);
+            echo var_dump($result);
+            $flag = false;
+            while ($row = mysqli_fetch_assoc($result)) {
+                if($row['password'] == $uPass){
+                    $flag = true;
+                    break;
+                }
+            }
+            if($flag){
+                header("Location: adminelections.php");
+            } else {
+                echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Warning!</strong> Incorrect credentials found for admin.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>';
+            }
+        }
+        else {
             $sql = "select * from `users` where `enrollid` = '$uID' and `password` = '$uPass'";
             $result = mysqli_query($conn, $sql);
             $numRows = mysqli_num_rows($result);

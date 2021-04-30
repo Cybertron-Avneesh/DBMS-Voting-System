@@ -106,10 +106,12 @@ session_start();
             <div class="row">
                 <div class="col-md-3 register-left">
                     <div>
-                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                        <!-- <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" /> -->
+                        <img src="http://cdn.onlinewebfonts.com/svg/img_532042.png" alt="" />
                     </div>
                     <h3>Welcome</h3>
-                    <p>Register here</p>
+                    <p></p>
+                    <span>Already have an account?</span>
                     <div class="center"><a class="btnlogin" href="./index.php">Login</a></div>
                     <!-- <a href="./index.php" class="">Login</a> -->
                 </div>
