@@ -29,7 +29,6 @@
 * Start *`Apache Server`* in it.
 * Open any browser of your choice and navigate to *``localhost``* using URL bar.
 
-## 💻 | Screen Shots
 
 ## ✒️ | Authors
 
@@ -52,6 +51,27 @@
 
 * Enrollment: **IIB2019014**
 * Github: [@ashish-ty](https://github.com/ashish-ty)
+
+## 💻 | Screen Shots
+
+<img src="./screen%20shots/ss%20(1).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(2).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(3).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(4).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(5).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(6).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(7).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(8).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(9).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(10).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(11).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(12).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(13).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(14).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(15).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(16).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(17).jpeg" style="height: 200px">
+<img src="./screen%20shots/ss%20(18).jpeg" style="height: 200px">
 
 ## 💁🏻 | Show your support
 
