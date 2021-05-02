@@ -7,7 +7,7 @@
 
 ### Section: C
 
-### Group: 23
+### Group: 22
 
 ## 🕸️ | Languages and Frameworks
 
