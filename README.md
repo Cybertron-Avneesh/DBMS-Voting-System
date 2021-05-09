@@ -9,6 +9,8 @@
 
 ### Group: 22
 
+### Project Report [PDF](https://github.com/Cybertron-Avneesh/DBMS-Voting-System/blob/main/DBMS_Project_Report.pdf) or [Notion webpage](https://www.notion.so/DBMS-Project-Report-79c98213525b4236b17e94dd63433632)
+
 ## 🕸️ | Languages and Frameworks
 
 * PHP
